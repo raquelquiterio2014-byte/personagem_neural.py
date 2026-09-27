@@ -24,17 +24,19 @@ Run the small behavior checks from the repository root:
 python -m unittest discover -s tests
 ```
 
-## Other prototypes in this repository
+## Archived experiments
+
+Older drafts are grouped under `archive/` so the runnable entry point is clear. These examples show exploration, not a single integrated application.
 
 | File | What it explores | Status and requirements |
 | --- | --- | --- |
-| `Estudante de ADS`, `Amiga Engraçada` | Python keyword responses | Older drafts; `chatbot.py` is the runnable entry point. |
-| `Raquel, sua nova amiga` | Microphone recognition and text-to-speech | Experimental; needs `SpeechRecognition`, `pyttsx3`, a working microphone/audio stack and access to Google's recognition service. |
-| `Diálogo Emoçoes` | Whisper speech transcription, DialoGPT response, text-to-speech | Experimental; needs `sounddevice`, `numpy`, `openai-whisper`, `transformers`, `torch`, `pyttsx3`, audio hardware, and model downloads. Emotion labels come from **keyword rules**, not an emotion classifier; the avatar is printed text, not animation. |
-| `Chatbot 3.py` | OpenAI API integration draft | Historical draft; it uses a variable before initialization and is not runnable as published. Never place a real API key in a source file. |
-| `Personagem 3 - Raquel.c`, `Personagem 3.1 - Raquel.c` | C keyword responses and eSpeak | Experimental C drafts; `3.1` has malformed formatting and must be repaired before compilation. |
+| `archive/estudante_ads.py`, `archive/amiga_engracada.py` | Python keyword responses | Older drafts; `chatbot.py` is the runnable entry point. |
+| `archive/raquel_voz.py` | Microphone recognition and text-to-speech | Experimental; needs `SpeechRecognition`, `pyttsx3`, a working microphone/audio stack and access to Google's recognition service. |
+| `archive/dialogo_emocoes.py` | Whisper speech transcription, DialoGPT response, text-to-speech | Experimental; needs `sounddevice`, `numpy`, `openai-whisper`, `transformers`, `torch`, `pyttsx3`, audio hardware, and model downloads. Emotion labels come from **keyword rules**, not an emotion classifier; the avatar is printed text, not animation. |
+| `archive/openai_chatbot_draft.txt` | OpenAI API integration draft | Historical draft; it uses a variable before initialization and is not runnable as published. Never place a real API key in a source file. |
+| `archive/personagem_raquel.c`, `archive/personagem_raquel_3_1_draft.txt` | C keyword responses and eSpeak | Experimental C drafts; `3.1` has malformed formatting and must be repaired before compilation. |
 
-The original files remain available as evidence of iteration. They are not claimed as a single integrated application. A next iteration can isolate and repair one audio pipeline, put its dependencies in a dedicated requirements file, and record a short run on the target operating system.
+The original root paths remain available in Git history as evidence of iteration. A next iteration can isolate and repair one audio pipeline, put its dependencies in a dedicated requirements file, and record a short run on the target operating system.
 
 ## What this project demonstrates
 
